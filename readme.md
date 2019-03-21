@@ -1,12 +1,4 @@
-Plantilla para crear aplicaciones lista para desarrollar (Quizas te ahorre algunos clicks):
-
-->esta traducida al español
-
-->tiene generado el Auth
-
-->tiene instalalado laravel Collective
-
-
+Prototipo de sistema de gestión de notas académicas escolares
 <hr>
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
