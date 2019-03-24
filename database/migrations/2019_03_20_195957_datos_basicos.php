@@ -26,7 +26,7 @@ class DatosBasicos extends Migration
         $table->string('departamento_nacimiento');
         $table->string('ciudad_nacimiento');
         $table->string('fecha_expedicion');
-        $table->string('depatamento_expedicion');
+        $table->string('departamento_expedicion');
         $table->string('ciudad_expedicion');
         $table->string('direccion');
         $table->timestamps();

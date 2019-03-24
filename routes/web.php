@@ -11,9 +11,23 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('wacho', function () {
     return view('welcome');
 });
+
+// rutas de frontend
+
+Route::get('/', 'frontendController@index')->name('indice');
+
+Route::get('acerca_de', 'frontendController@about')->name('acerca');
+
+//rutas del backend
+
+Route::get('main', 'mainController@main')->name('dashboard');
+
+Route::get('crear_registro', 'registrosController@crear_registro');
+
+Route::post('creacion_registro', 'registrosController@proc_creacion');
 
 Auth::routes();
 
