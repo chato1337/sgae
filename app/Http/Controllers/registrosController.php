@@ -38,4 +38,11 @@ class registrosController extends Controller
 
       return view('editar/editar_registro', compact('registro'));
     }
+
+    public function proc_edicion(registers $request)
+    {
+      $request->update(request()->all()); //este controlador va causar conflictos a futuro
+
+      return redirect('main');
+    }
 }

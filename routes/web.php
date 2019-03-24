@@ -31,6 +31,8 @@ Route::post('creacion_registro', 'registrosController@proc_creacion');
 
 Route::get('editar_registro/{request}', 'registrosController@editar_registro');
 
+Route::patch('edicion_registro/{request}', 'registrosController@proc_edicion');
+
 Route::get('listar_registros', 'registrosController@listar_registros');
 
 Auth::routes();

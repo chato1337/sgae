@@ -14,11 +14,11 @@
 
                   <div class="card-body">
 
-                    {!! Form::model($registro, ['url' => 'edicion_registro', 'method' => 'POST']) !!}
+                    {!! Form::model($registro, ['url' => "edicion_registro/{$registro->id}", 'method' => 'PATCH']) !!}
 
                       @include('layouts.formularioRegistro')
 
-                      <input class="btn btn-warning" type="submit" name="" value="Crear registro">
+                      <input class="btn btn-warning" type="submit" name="" value="Editar registro">
 
                     {!! Form::close() !!}
                   </div>
