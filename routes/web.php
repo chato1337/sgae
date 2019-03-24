@@ -29,6 +29,10 @@ Route::get('crear_registro', 'registrosController@crear_registro');
 
 Route::post('creacion_registro', 'registrosController@proc_creacion');
 
+Route::get('editar_registro/{request}', 'registrosController@editar_registro');
+
+Route::get('listar_registros', 'registrosController@listar_registros');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

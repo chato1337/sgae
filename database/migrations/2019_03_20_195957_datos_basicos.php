@@ -16,6 +16,7 @@ class DatosBasicos extends Migration
       Schema::create('DatosBasicos', function (Blueprint $table) {
         $table->bigIncrements('id');
         $table->unsignedInteger('user_id')->nullable();
+        $table->string('rol')->default('ninguno');
         $table->string('tipo_documento');
         $table->string('num_documento');
         $table->string('nombre1');

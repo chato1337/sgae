@@ -22,6 +22,9 @@
           <a class="btn btn-primary" href="crear_registro">registrar persona</a>
         </div>
         <div class="col">
+          <a class="btn btn-primary" href="listar_registros">Listar personas</a>
+        </div>
+        <div class="col">
           <a class="btn btn-primary" href="#">consular las notas</a>
         </div>
         <div class="col">
