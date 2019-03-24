@@ -32,6 +32,7 @@ class DatosBasicos extends Migration
         $table->string('direccion');
         $table->timestamps();
 
+        // pendiente la relacion de las tablas
 
       });
     }

@@ -29,6 +29,7 @@
                           <td>{{ $registro->num_documento }}</td>
                           <td>{{ $registro->created_at }}</td>
                           <td> <a class="btn btn-warning" href="editar_registro/{{ $registro->id }}">editar</a> </td>
+                          <td> <a class="btn btn-info" href="asignar_docente/{{ $registro->id }}">Asignar rol</a> </td>
                         </tr>
                       @endforeach
                     </tbody>

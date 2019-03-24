@@ -23,6 +23,8 @@ Route::get('acerca_de', 'frontendController@about')->name('acerca');
 
 //rutas del backend
 
+
+//rutas para registro de datos basicos
 Route::get('main', 'mainController@main')->name('dashboard');
 
 Route::get('crear_registro', 'registrosController@crear_registro');
@@ -34,6 +36,12 @@ Route::get('editar_registro/{request}', 'registrosController@editar_registro');
 Route::patch('edicion_registro/{request}', 'registrosController@proc_edicion');
 
 Route::get('listar_registros', 'registrosController@listar_registros');
+
+//rutas para registro de docentes
+Route::get('asignar_docente/{request}', 'docentesController@asignar');
+
+Route::post('asignacion_docente', 'docentesController@proc_asignacion');
+
 
 Auth::routes();
 
